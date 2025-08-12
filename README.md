@@ -1,6 +1,13 @@
+<p align="center">
+  <img src="https://i.postimg.cc/zGnjJnxg/Screenshot-2025-08-12-190543.png" 
+       alt="Screenshot" 
+       width="400" 
+       height="250" />
+</p>
+
 
 <p align="center">
-  <b><i>3HUE Security Agent</b> is the Open Cloud Security platform trusted by thousands to automate security and compliance in any cloud environment. With hundreds of ready-to-use checks and compliance frameworks, Prowler delivers real-time, customizable monitoring and seamless integrations, making cloud security simple, scalable, and cost-effective for organizations of any size.
+  <b><i>3HUE Security Agent</b> is the Open Cloud Security platform trusted by thousands to automate security and compliance in any cloud environment. With hundreds of ready-to-use checks and compliance frameworks, delivers real-time, customizable monitoring and seamless integrations, making cloud security simple, scalable, and cost-effective for organizations of any size.
 </p>
 <p align="center">
 
@@ -10,7 +17,6 @@
   <a href="https://goto.prowler.com/slack"><img alt="Slack Shield" src="https://img.shields.io/badge/slack-prowler-brightgreen.svg?logo=slack"></a>
   <a href="https://pypi.org/project/prowler/"><img alt="Python Version" src="https://img.shields.io/pypi/v/prowler.svg"></a>
   <a href="https://pypi.python.org/pypi/prowler/"><img alt="Python Version" src="https://img.shields.io/pypi/pyversions/prowler.svg"></a>
-  <a href="https://pypistats.org/packages/prowler"><img alt="PyPI Prowler Downloads" src="https://img.shields.io/pypi/dw/prowler.svg?label=prowler%20downloads"></a>
   <a href="https://hub.docker.com/r/toniblyx/prowler"><img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/toniblyx/prowler"></a>
   <a href="https://hub.docker.com/r/toniblyx/prowler"><img alt="Docker" src="https://img.shields.io/docker/cloud/build/toniblyx/prowler"></a>
   <a href="https://hub.docker.com/r/toniblyx/prowler"><img alt="Docker" src="https://img.shields.io/docker/image-size/toniblyx/prowler"></a>
@@ -24,13 +30,9 @@
   <a href="https://github.com/prowler-cloud/prowler/releases"><img alt="Version" src="https://img.shields.io/github/release-date/prowler-cloud/prowler"></a>
   <a href="https://github.com/prowler-cloud/prowler"><img alt="Contributors" src="https://img.shields.io/github/contributors-anon/prowler-cloud/prowler"></a>
   <a href="https://github.com/prowler-cloud/prowler"><img alt="License" src="https://img.shields.io/github/license/prowler-cloud/prowler"></a>
-  <a href="https://twitter.com/ToniBlyx"><img alt="Twitter" src="https://img.shields.io/twitter/follow/toniblyx?style=social"></a>
-  <a href="https://twitter.com/prowlercloud"><img alt="Twitter" src="https://img.shields.io/twitter/follow/prowlercloud?style=social"></a>
+
 </p>
 <hr>
-<p align="center">
-  <img align="center" src="/docs/img/prowler-cli-quick.gif" width="100%" height="100%">
-</p>
 
 # Description
 
@@ -46,25 +48,23 @@
 - **National Security Standards:** ENS (Spanish National Security Scheme)
 - **Custom Security Frameworks:** Tailored to your needs
 
-## 3HUE Security Agent CLI and 3HUE Security Agent Cloud
-
-3HUE Security Agent offers a Command Line Interface (CLI), known as Prowler Open Source, and an additional service built on top of it, called 3HUE Security Agent
-
 ## 3HUE Security Agent App
 
-3HUE Security Agent App is a web-based application that simplifies running Prowler across your cloud provider accounts. It provides a user-friendly interface to visualize the results and streamline your security assessments.
+3HUE Security Agent App is a web-based application that simplifies running across your cloud provider accounts. It provides a user-friendly interface to visualize the results and streamline your security assessments.
 
 
 ## 3HUE Security Agent Dashboard
 
 ```console
-prowler dashboard
+3HUE-Security Agent dashboard
 ```
-![3HUE Security Agent Dashboard](docs/img/dashboard.png)
+<p align="center">
+  <img src="https://i.postimg.cc/FFjsQ7xd/Screenshot-2025-08-12-190400.png" alt="Screenshot">
+</p>
 
 # 3HUE Security Agent at a Glance
 
-| Provider | Checks | Services | [Compliance Frameworks](https://docs.prowler.com/projects/prowler-open-source/en/latest/tutorials/compliance/) | [Categories](https://docs.prowler.com/projects/prowler-open-source/en/latest/tutorials/misc/#categories) |
+| Provider | Checks | Services | Compliance Frameworks | Categories|
 |---|---|---|---|---|
 | AWS | 567 | 82 | 36 | 10 |
 | GCP | 79 | 13 | 10 | 3 |
@@ -74,22 +74,11 @@ prowler dashboard
 | M365 | 69 | 7 | 3 | 2 |
 | NHN (Unofficial) | 6 | 2 | 1 | 0 |
 
-> [!Note]
-> The numbers in the table are updated periodically.
-
-> [!Tip]
-> For the most accurate and up-to-date information about checks, services, frameworks, and categories, visit [**Prowler Hub**](https://hub.prowler.com).
-
-> [!Note]
-> Use the following commands to list Prowler's available checks, services, compliance frameworks, and categories: `prowler <provider> --list-checks`, `prowler <provider> --list-services`, `prowler <provider> --list-compliance` and `prowler <provider> --list-categories`.
-
 # 💻 Installation
 
 ## 3HUE Security Agent App
 
 3HUE Security Agent App offers flexible installation methods tailored to various environments:
-
-> For detailed instructions on using 3HUE Security Agent App, refer to the [3HUE Security Agent App Usage Guide](https://docs.prowler.com/projects/prowler-open-source/en/latest/tutorials/prowler-app/).
 
 ### Docker Compose
 
@@ -100,8 +89,7 @@ prowler dashboard
 **Commands**
 
 ``` console
-curl -LO https://raw.githubusercontent.com/prowler-cloud/prowler/refs/heads/master/docker-compose.yml
-curl -LO https://raw.githubusercontent.com/prowler-cloud/prowler/refs/heads/master/.env
+curl -LO https://github.com/OCTO-Hurricane/3HUE-Security-Scanner.git
 docker compose up -d
 ```
 
@@ -119,7 +107,7 @@ If your workstation's architecture is incompatible, you can resolve this by:
 ### Common Issues with Docker Pull Installation
 
 > [!Note]
-  If you want to use AWS role assumption (e.g., with the "Connect assuming IAM Role" option), you may need to mount your local `.aws` directory into the container as a volume (e.g., `- "${HOME}/.aws:/home/prowler/.aws:ro"`). There are several ways to configure credentials for Docker containers. See the [Troubleshooting](./docs/troubleshooting.md) section for more details and examples.
+  If you want to use AWS role assumption (e.g., with the "Connect assuming IAM Role" option), you may need to mount your local `.aws` directory into the container as a volume. There are several ways to configure credentials for Docker containers. See the [Troubleshooting](./docs/troubleshooting.md) section for more details and examples.
 
 You can find more information in the [Troubleshooting](./docs/troubleshooting.md) section.
 
@@ -136,8 +124,8 @@ You can find more information in the [Troubleshooting](./docs/troubleshooting.md
 **Commands to run the API**
 
 ``` console
-git clone https://github.com/prowler-cloud/prowler
-cd prowler/api
+git clone https://github.com/OCTO-Hurricane/3HUE-Security-Scanner.git
+cd 3HUE-Security-Scanner/api
 poetry install
 eval $(poetry env activate)
 set -a
@@ -158,8 +146,8 @@ gunicorn -c config/guniconf.py config.wsgi:application
 **Commands to run the API Worker**
 
 ``` console
-git clone https://github.com/prowler-cloud/prowler
-cd prowler/api
+git clone https://github.com/OCTO-Hurricane/3HUE-Security-Scanner.git
+cd 3HUE-Security-Scanner/api
 poetry install
 eval $(poetry env activate)
 set -a
@@ -171,8 +159,8 @@ python -m celery -A config.celery worker -l info -E
 **Commands to run the API Scheduler**
 
 ``` console
-git clone https://github.com/prowler-cloud/prowler
-cd prowler/api
+git clone https://github.com/OCTO-Hurricane/3HUE-Security-Scanner.git
+cd 3HUE-Security-Scanner/api
 poetry install
 eval $(poetry env activate)
 set -a
@@ -184,83 +172,37 @@ python -m celery -A config.celery beat -l info --scheduler django_celery_beat.sc
 **Commands to run the UI**
 
 ``` console
-git clone https://github.com/prowler-cloud/prowler
-cd prowler/ui
+git clone https://github.com/OCTO-Hurricane/3HUE-Security-Scanner.git
+cd 3HUE-Security-Scanner/ui
 npm install
 npm run build
 npm start
 ```
 
-> Once configured, access the Prowler App at http://localhost:3000. Sign up using your email and password to get started.
-
-## Prowler CLI
-### Pip package
-Prowler CLI is available as a project in [PyPI](https://pypi.org/project/prowler-cloud/). Consequently, it can be installed using pip with Python >3.9.1, <3.13:
-
-```console
-pip install prowler
-prowler -v
-```
->For further guidance, refer to [https://docs.prowler.com](https://docs.prowler.com/projects/prowler-open-source/en/latest/#prowler-cli-installation)
+> Once configured, access the 3HUE Security Agent App at http://localhost:3000. Sign up using your email and password to get started.
 
 ### Containers
 
-**Available Versions of Prowler CLI**
+**Available Versions of 3HUE Security Agent CLI**
 
-The following versions of Prowler CLI are available, depending on your requirements:
+The following versions of 3HUE Security Agent CLI are available, depending on your requirements:
 
-- `latest`: Synchronizes with the `master` branch. Note that this version is not stable.
-- `v4-latest`: Synchronizes with the `v4` branch. Note that this version is not stable.
-- `v3-latest`: Synchronizes with the `v3` branch. Note that this version is not stable.
-- `<x.y.z>` (release): Stable releases corresponding to specific versions. You can find the complete list of releases [here](https://github.com/prowler-cloud/prowler/releases).
-- `stable`: Always points to the latest release.
-- `v4-stable`: Always points to the latest release for v4.
-- `v3-stable`: Always points to the latest release for v3.
-
-The container images are available here:
-- Prowler CLI:
-    - [DockerHub](https://hub.docker.com/r/toniblyx/prowler/tags)
-    - [AWS Public ECR](https://gallery.ecr.aws/prowler-cloud/prowler)
-- Prowler App:
-    - [DockerHub - Prowler UI](https://hub.docker.com/r/prowlercloud/prowler-ui/tags)
-    - [DockerHub - Prowler API](https://hub.docker.com/r/prowlercloud/prowler-api/tags)
-
-### From GitHub
-
-Python >3.9.1, <3.13 is required with pip and Poetry:
-
-``` console
-git clone https://github.com/prowler-cloud/prowler
-cd prowler
-eval $(poetry env activate)
-poetry install
-python prowler-cli.py -v
-```
-> [!IMPORTANT]
-> To clone Prowler on Windows, configure Git to support long file paths by running the following command: `git config core.longpaths true`.
-
-> [!IMPORTANT]
-> As of Poetry v2.0.0, the `poetry shell` command has been deprecated. Use `poetry env activate` instead for environment activation.
->
-> If your Poetry version is below v2.0.0, continue using `poetry shell` to activate your environment.
-> For further guidance, refer to the Poetry Environment Activation Guide https://python-poetry.org/docs/managing-environments/#activating-the-environment.
+- `latest`: Synchronizes with the `master` branch.
 
 # ✏️ High level architecture
 
-## Prowler App
-**Prowler App** is composed of three key components:
+## 3HUE Security Agent App
+**3HUE Security Agent App** is composed of three key components:
 
-- **Prowler UI**: A web-based interface, built with Next.js, providing a user-friendly experience for executing Prowler scans and visualizing results.
-- **Prowler API**: A backend service, developed with Django REST Framework, responsible for running Prowler scans and storing the generated results.
-- **Prowler SDK**: A Python SDK designed to extend the functionality of the Prowler CLI for advanced capabilities.
+- **UI**: A web-based interface, built with Next.js, providing a user-friendly experience for executing scans and visualizing results.
+- **API**: A backend service, developed with Django REST Framework, responsible for running scans and storing the generated results.
+- **SDK**: A Python SDK designed to extend the functionality of the 3HUE Security Agent CLI for advanced capabilities.
 
-![Prowler App Architecture](docs/img/prowler-app-architecture.png)
+## 3HUE Security Agent CLI
 
-## Prowler CLI
+**Running 3HUE Security Agent **
 
-**Running Prowler**
-
-Prowler can be executed across various environments, offering flexibility to meet your needs. It can be run from:
+3HUE Security Agent can be executed across various environments, offering flexibility to meet your needs. It can be run from:
 
 - Your own workstation
 
@@ -280,40 +222,8 @@ And many more environments.
 
 ![Architecture](docs/img/architecture.png)
 
-# Deprecations from v3
-
-## General
-- `Allowlist` now is called `Mutelist`.
-- The `--quiet` option has been deprecated. Use the `--status` flag to filter findings based on their status: PASS, FAIL, or MANUAL.
-- All findings with an `INFO` status have been reclassified as `MANUAL`.
-- The CSV output format is standardized across all providers.
-
-**Deprecated Output Formats**
-
-The following formats are now deprecated:
-- Native JSON has been replaced with JSON in [OCSF] v1.1.0 format, which is standardized across all providers (https://schema.ocsf.io/).
-
-## AWS
-
-**AWS Flag Deprecation**
-
-The flag --sts-endpoint-region has been deprecated due to the adoption of AWS STS regional tokens.
-
-**Sending FAIL Results to AWS Security Hub**
-
-- To send only FAILS to AWS Security Hub, use one of the following options: `--send-sh-only-fails` or `--security-hub --status FAIL`.
-
-
-# 📖 Documentation
-
-**Documentation Resources**
-
-For installation instructions, usage details, tutorials, and the Developer Guide, visit https://docs.prowler.com/
-
 # 📃 License
 
-**Prowler License Information**
+**3HUE Security Agent License Information**
 
-Prowler is licensed under the Apache License 2.0, as indicated in each file within the repository. Obtaining a Copy of the License
-
-A copy of the License is available at <http://www.apache.org/licenses/LICENSE-2.0>
+3HUE Security Agent is licensed under the Apache License 2.0.
